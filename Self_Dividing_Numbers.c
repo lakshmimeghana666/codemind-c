@@ -5,8 +5,7 @@ int main()
     scanf("%d%d",&n,&m);
     for(i=n;i<=m;i++)
     {
-        int c=0,s=0;;
-        t=i;
+        int c=0,s=0;t=i;
         while(t)
         {
             d=t%10;
@@ -24,7 +23,6 @@ int main()
                 }
             }
         }
-        //printf("%d ",s);
         if(s==c)
         {
             printf("%d ",i);
