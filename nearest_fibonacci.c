@@ -1,24 +1,26 @@
 #include<stdio.h>
 int main()
 {
-	int first=0,second=1,next=0,number;
-	scanf("%d",&number);
-	while(number>next)
-	{
-		next=first+second;
-		first=second;
-		second=next;
-	}
-	if(number-first<second-number)
-	{
-		printf("%d",first);
-	}
-	else if(number-first==second-number)
-	{
-		printf("%d %d",first,second);
-	}
-	else
-	{
-		printf("%d",second);
-	}
+    int n,a=0,b=1,c,temp;
+    scanf("%d",&n);
+    c=a+b;
+    temp=n;
+    while(c<=temp)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    if(n-a>b-n)
+    {
+        printf("%d",b);
+    }
+    else if(n-a<b-n)
+    {
+        printf("%d",a);
+    }
+    else
+    {
+        printf("%d %d",a,b);
+    }
 }
